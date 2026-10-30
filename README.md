@@ -1,12 +1,40 @@
 # Unofficial JSM Ops Integration for Google SecOps SOAR
 
+<img src="logos/jira-service-management-logomark.png" alt="Jira Service Management logomark" width="72">
+
+Create and close Jira Service Management (JSM) Ops alerts from Google SecOps SOAR cases.
+
+Unofficial integration. Not an Atlassian or Google product.
+
+Install from the latest release: [JSM-Ops-integration.zip](https://github.com/The-Computer-Cowboy/Google-SecOps-JSMOps-Integration/releases/latest/download/JSM-Ops-integration.zip) ([release notes](https://github.com/The-Computer-Cowboy/Google-SecOps-JSMOps-Integration/releases/latest)).
+
+## Actions and jobs
+
+| Name | What it does |
+| --- | --- |
+| [Ping](#ping) | Checks credentials. Used by the SecOps **Test** button. Disabled for playbooks by default. |
+| [Create Alert](#create-alert) | Creates a JSM Ops alert. Set Alias to `secops-case-[Case.Id]` so Sync Cases can match it. |
+| [Get Request Status](#get-request-status) | Tracks an async write (create, close, escalate, acknowledge, assign) and returns alert details. |
+| [Get Alert](#get-alert) | Retrieves an alert by Alert ID. |
+| [Get Alert by Alias](#get-alert-by-alias) | Retrieves an alert by its alias. |
+| [List Alerts](#list-alerts) | Lists alerts with an optional query, size, and offset. |
+| [Acknowledge Alert](#acknowledge-alert) | Acknowledges an alert so responders know it is being handled. |
+| [Add Alert Note](#add-alert-note) | Adds a note to an alert. |
+| [Assign Alert](#assign-alert) | Assigns an alert to a user by Atlassian account ID. |
+| [Add Responder](#add-responder) | Adds a team, user, escalation, or schedule responder. |
+| [Update Priority](#update-priority) | Sets priority to `P0`–`P5`. |
+| [Add Tags](#add-tags) | Adds comma-separated tags. |
+| [Add Extra Properties](#add-extra-properties) | Adds custom key/value properties. |
+| [Close Alert](#close-alert) | Closes an alert by Alert ID. |
+| [Escalate Alert](#escalate-alert) | Triggers an escalation policy. |
+| [Get On-Call](#get-on-call) | Lists current on-call responders for a schedule. |
+| [Sync Cases](#sync-cases) | Job. Closes the linked JSM Ops alert when a SecOps case tagged `JSM` is closed. |
+
 ## Overview
 
-Jira Service Management (JSM) Ops focuses on incident management and IT operations. This unofficial Google SecOps SOAR integration lets playbooks and analysts create, track, acknowledge, assign, close, and escalate JSM Ops alerts, plus look up on-call responders and enrich alerts with notes, tags, and extra properties. A scheduled **Sync Cases** job can close linked JSM Ops alerts when a SecOps case tagged `JSM` is closed.
+Jira Service Management (JSM) Ops focuses on incident management and IT operations. Playbooks and analysts can create, track, acknowledge, assign, close, and escalate alerts, look up on-call responders, and enrich alerts with notes, tags, and extra properties. A scheduled **Sync Cases** job closes linked JSM Ops alerts when a SecOps case tagged `JSM` is closed.
 
-This integration is owned by the "community". Support Contact: [thecomputercowboy@proton.me](mailto:thecomputercowboy@proton.me).
-
-**Release note:** `JSM Ops v17 - Use the current Jira Service Management logomark as the integration icon`
+This integration is owned by the community. Support contact: [thecomputercowboy@proton.me](mailto:thecomputercowboy@proton.me).
 
 ## Prerequisites
 
@@ -402,6 +430,12 @@ Lists current on-call responders for a schedule. Optionally evaluate on-call at 
 - Date (ISO-8601; omit for now)
 
 JSON sample: `[Examples/Get On-Call.json](Examples/Get%20On-Call.json)`
+
+## Changelog
+
+### v17
+
+Use the current Jira Service Management logomark as the integration icon.
 
 ## License
 
