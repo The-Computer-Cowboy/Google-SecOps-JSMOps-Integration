@@ -1,4 +1,4 @@
-# Unofficial JSM Ops Integration for SecOps SOAR
+# Unofficial JSM Ops Integration for Google SecOps SOAR
 
 ## Overview
 
