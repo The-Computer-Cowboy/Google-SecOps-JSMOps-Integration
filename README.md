@@ -6,7 +6,7 @@ Jira Service Management (JSM) Ops focuses on incident management and IT operatio
 
 This integration is owned by the "community". Support Contact: [thecomputercowboy@proton.me](mailto:thecomputercowboy@proton.me).
 
-**Release note:** `JSM Ops v11 - Fix Sync Cases skipping closed cases (status/is_case_closed/tags) and log skip reasons`
+**Release note:** `JSM Ops v17 - Use the current Jira Service Management logomark as the integration icon`
 
 ## Prerequisites
 
