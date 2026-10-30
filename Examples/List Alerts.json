@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "e0caa0ce-d52f-4500-81b9-d592d06970b6",
+      "tinyId": "1234",
+      "message": "Suspicious login detected from unusual location",
+      "status": "open",
+      "acknowledged": false,
+      "priority": "P2",
+      "alias": "secops-case-12345",
+      "createdAt": "2024-01-05T07:06:47.958Z",
+      "updatedAt": "2024-01-05T07:06:47.958Z",
+      "source": "Google SecOps",
+      "tags": ["secops", "identity"]
+    }
+  ],
+  "links": {
+    "next": "/v1/alerts?offset=20&size=20"
+  }
+}

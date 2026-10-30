@@ -1,0 +1,34 @@
+{
+  "Name": "Escalate Alert",
+  "Description": "Escalation triggers the defined escalation policies which could involve notifying additional users or teams, or increasing the frequency of notifications for the alert.",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Type": 0,
+  "Parameters": [
+    {
+      "Name": "Alert ID",
+      "Type": 0,
+      "Description": "ID of the alert you are wanting to escalate.",
+      "IsMandatory": true,
+      "Value": ""
+    },
+    {
+      "Name": "Escalation ID",
+      "Type": 0,
+      "Description": "The escalation policy ID you are wanting to invoke.",
+      "IsMandatory": true,
+      "Value": ""
+    }
+  ],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}",
+  "HasJsonResult": true,
+  "DynamicResultsMetadata": [
+    {
+      "ResultName": "JsonResult",
+      "ShowResult": true,
+      "ResultExample": "{\n  \"result\": \"Request will be processed\",\n  \"requestId\": \"f0e1d2c3-b4a5-6978-8899-aabbccddeeff\",\n  \"took\": 0.201\n}"
+    }
+  ]
+}

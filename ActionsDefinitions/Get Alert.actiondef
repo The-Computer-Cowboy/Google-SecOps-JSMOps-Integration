@@ -1,0 +1,27 @@
+{
+  "Name": "Get Alert",
+  "Description": "Retrieves full details for a JSM Ops alert by Alert ID, including status, priority, owner, tags, and responders.",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Type": 0,
+  "Parameters": [
+    {
+      "Name": "Alert ID",
+      "Type": 0,
+      "Description": "ID of the alert to retrieve.",
+      "IsMandatory": true,
+      "Value": ""
+    }
+  ],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}",
+  "HasJsonResult": true,
+  "DynamicResultsMetadata": [
+    {
+      "ResultName": "JsonResult",
+      "ShowResult": true,
+      "ResultExample": "{\n  \"id\": \"e0caa0ce-d52f-4500-81b9-d592d06970b6\",\n  \"tinyId\": \"1234\",\n  \"createdAt\": \"2024-01-05T07:06:47.958Z\",\n  \"updatedAt\": \"2024-01-05T07:06:47.958Z\",\n  \"message\": \"Suspicious login detected from unusual location\",\n  \"entity\": \"user@example.com\",\n  \"source\": \"Google SecOps\",\n  \"status\": \"open\",\n  \"alias\": \"secops-case-12345\",\n  \"tags\": [\n    \"secops\",\n    \"identity\"\n  ],\n  \"extraProperties\": {\n    \"rule\": \"suspicious_login\",\n    \"environment\": \"production\"\n  },\n  \"description\": \"Multiple failed authentications followed by success from a new geo.\",\n  \"acknowledged\": false,\n  \"count\": 1,\n  \"owner\": \"\",\n  \"snoozed\": false,\n  \"priority\": \"P2\",\n  \"responders\": [\n    {\n      \"id\": \"4513b7ea-3b91-438f-b7e4-e3e54af9147c\",\n      \"type\": \"team\"\n    }\n  ]\n}"
+    }
+  ]
+}

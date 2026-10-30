@@ -1,0 +1,27 @@
+{
+  "Name": "Acknowledge Alert",
+  "Description": "Acknowledges a JSM Ops alert to indicate it is being handled and to stop further escalation notifications.",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Type": 0,
+  "Parameters": [
+    {
+      "Name": "Alert ID",
+      "Type": 0,
+      "Description": "ID of the alert you want to acknowledge.",
+      "IsMandatory": true,
+      "Value": ""
+    }
+  ],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}",
+  "HasJsonResult": true,
+  "DynamicResultsMetadata": [
+    {
+      "ResultName": "JsonResult",
+      "ShowResult": true,
+      "ResultExample": "{\n  \"result\": \"Request will be processed\",\n  \"requestId\": \"d383c6e9-b1e7-4b59-9c35-72f1a2187777\",\n  \"took\": 0.195\n}"
+    }
+  ]
+}

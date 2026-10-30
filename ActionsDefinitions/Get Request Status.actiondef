@@ -1,0 +1,27 @@
+{
+  "Name": "Get Request Status",
+  "Description": "Tracks the status of asynchronous JSM Ops write requests (Create, Close, Escalate, Acknowledge, Assign, and similar actions) and returns alert details when available. Use the Request ID returned by those actions.",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Type": 0,
+  "Parameters": [
+    {
+      "Name": "Request ID",
+      "Type": 0,
+      "Description": "Request ID returned from an asynchronous JSM Ops write action (Create Alert, Close Alert, Escalate Alert, Acknowledge Alert, Assign Alert, and similar).",
+      "IsMandatory": true,
+      "Value": ""
+    }
+  ],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}",
+  "HasJsonResult": true,
+  "DynamicResultsMetadata": [
+    {
+      "ResultName": "JsonResult",
+      "ShowResult": true,
+      "ResultExample": "{\n  \"action\": \"Create\",\n  \"processedAt\": \"2024-01-05T07:44:10.409Z\",\n  \"integrationId\": \"\",\n  \"isSuccess\": true,\n  \"status\": \"Processed\",\n  \"alertId\": \"9b251e07-73c9-4907-9996-8cb53a6a20d0-1704440650350\",\n  \"alias\": \"ExampleAlertAlias\"\n}"
+    }
+  ]
+}

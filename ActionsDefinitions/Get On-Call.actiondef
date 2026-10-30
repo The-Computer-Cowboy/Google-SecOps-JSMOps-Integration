@@ -1,0 +1,34 @@
+{
+  "Name": "Get On-Call",
+  "Description": "Lists current on-call responders for a JSM Ops schedule. Optionally evaluate on-call at a specific date/time.",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Type": 0,
+  "Parameters": [
+    {
+      "Name": "Schedule ID",
+      "Type": 0,
+      "Description": "ID of the on-call schedule to query.",
+      "IsMandatory": true,
+      "Value": ""
+    },
+    {
+      "Name": "Date",
+      "Type": 0,
+      "Description": "Optional ISO-8601 date/time for on-call evaluation. Leave empty to use the current time.",
+      "IsMandatory": false,
+      "Value": ""
+    }
+  ],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}",
+  "HasJsonResult": true,
+  "DynamicResultsMetadata": [
+    {
+      "ResultName": "JsonResult",
+      "ShowResult": true,
+      "ResultExample": "{\n  \"onCallParticipants\": [\n    {\n      \"id\": \"bc667897-cb21-496f-a46e-7c05ff0419dd\",\n      \"type\": \"team\"\n    },\n    {\n      \"id\": \"5b2b0e011b3a756623f4e25e\",\n      \"type\": \"user\"\n    },\n    {\n      \"id\": \"7a24e9d7-7a4f-4f86-a1df-21ca9c3112ac\",\n      \"type\": \"escalation\",\n      \"onCallParticipants\": [\n        {\n          \"id\": \"5b2b0e011b3a756623f4e25e\",\n          \"type\": \"user\"\n        }\n      ]\n    }\n  ]\n}"
+    }
+  ]
+}

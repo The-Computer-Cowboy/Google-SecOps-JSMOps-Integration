@@ -1,0 +1,27 @@
+{
+  "Name": "Close Alert",
+  "Description": "Closing an alert indicates that the issue has been resolved and no further action is necessary.",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Type": 0,
+  "Parameters": [
+    {
+      "Name": "Alert ID",
+      "Type": 0,
+      "Description": "ID of the alert you are wanting to close.",
+      "IsMandatory": true,
+      "Value": ""
+    }
+  ],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}",
+  "HasJsonResult": true,
+  "DynamicResultsMetadata": [
+    {
+      "ResultName": "JsonResult",
+      "ShowResult": true,
+      "ResultExample": "{\n  \"result\": \"Request will be processed\",\n  \"requestId\": \"a1b2c3d4-e5f6-7890-abcd-ef1234567890\",\n  \"took\": 0.182\n}"
+    }
+  ]
+}

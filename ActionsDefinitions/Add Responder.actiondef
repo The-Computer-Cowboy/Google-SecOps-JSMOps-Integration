@@ -1,0 +1,47 @@
+{
+  "Name": "Add Responder",
+  "Description": "Adds a responder (team, user, escalation, or schedule) to a JSM Ops alert.",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Type": 0,
+  "Parameters": [
+    {
+      "Name": "Alert ID",
+      "Type": 0,
+      "Description": "ID of the alert to add a responder to.",
+      "IsMandatory": true,
+      "Value": ""
+    },
+    {
+      "Name": "Responder ID",
+      "Type": 0,
+      "Description": "ID of the team, user, escalation, or schedule to add as a responder.",
+      "IsMandatory": true,
+      "Value": ""
+    },
+    {
+      "Name": "Responder Type",
+      "Type": 15,
+      "Description": "Type of responder to add.",
+      "IsMandatory": true,
+      "Value": "team",
+      "OptionalValues": [
+        "team",
+        "user",
+        "escalation",
+        "schedule"
+      ]
+    }
+  ],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}",
+  "HasJsonResult": true,
+  "DynamicResultsMetadata": [
+    {
+      "ResultName": "JsonResult",
+      "ShowResult": true,
+      "ResultExample": "{\n  \"result\": \"Request will be processed\",\n  \"requestId\": \"b2c3d4e5-f6a7-8901-bcde-f12345678901\",\n  \"took\": 0.175\n}"
+    }
+  ]
+}

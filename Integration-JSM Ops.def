@@ -1,0 +1,144 @@
+{
+  "IsAvailableForCommunity": false,
+  "Identifier": "JSM Ops",
+  "ShouldInstalledInSystem": false,
+  "Version": 16,
+  "DisplayName": "JSM Ops",
+  "Description": "Integrates Google SecOps SOAR with Jira Service Management Ops for alert lifecycle management: create, get, list, acknowledge, assign, escalate, close, notes, tags, priority updates, extra properties, on-call lookup, and a one-way Sync Cases job that closes linked JSM Ops alerts when a SecOps case tagged JSM is closed. This integration is owned by the \"community\". Support Contact: thecomputercowboy@proton.me.",
+  "ImageBase64": "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",
+  "SvgImage": "<svg id=\"Layer_1\" data-name=\"Layer 1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><defs><style>.cls-1 { stroke-width: 0px; }</style></defs><path class=\"cls-1\" d=\"M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.005-1.005zm5.723-5.756H5.736a5.215 5.215 0 0 0 5.215 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.758a1.001 1.001 0 0 0-1.001-1.001zM23.013 0H11.455a5.215 5.215 0 0 0 5.215 5.215h2.129v2.057A5.215 5.215 0 0 0 24 12.483V1.005A1.001 1.001 0 0 0 23.013 0Z\"/></svg>",
+  "IsCustom": true,
+  "PythonVersion": 3,
+  "IntegrationProperties": [
+    {
+      "IntegrationIdentifier": "JSM Ops",
+      "PropertyName": "JSM Ops API Key",
+      "PropertyDescription": "API key used to authenticate to JSM Ops.",
+      "PropertyDisplayName": "JSM Ops API Key",
+      "PropertyType": 3,
+      "IsMandatory": true,
+      "Value": null,
+      "Id": 0
+    },
+    {
+      "IntegrationIdentifier": "JSM Ops",
+      "PropertyName": "JSM Ops Cloud ID",
+      "PropertyDescription": "Atlassian Cloud ID for your JSM Ops tenant.",
+      "PropertyDisplayName": "JSM Ops Cloud ID",
+      "PropertyType": 2,
+      "IsMandatory": true,
+      "Value": null,
+      "Id": 0
+    },
+    {
+      "IntegrationIdentifier": "JSM Ops",
+      "PropertyName": "JSM Ops Service Account Email",
+      "PropertyDescription": "Service account email used with the JSM Ops API key.",
+      "PropertyDisplayName": "JSM Ops Service Account Email",
+      "PropertyType": 2,
+      "IsMandatory": true,
+      "Value": null,
+      "Id": 0
+    },
+    {
+      "IntegrationIdentifier": "JSM Ops",
+      "PropertyName": "JSM Ops Team ID",
+      "PropertyDescription": "Team ID used as responder and visibility target for alerts.",
+      "PropertyDisplayName": "JSM Ops Team ID",
+      "PropertyType": 2,
+      "IsMandatory": true,
+      "Value": null,
+      "Id": 0
+    },
+    {
+      "IntegrationIdentifier": "JSM Ops",
+      "PropertyName": "Verify SSL",
+      "PropertyDescription": "If enabled, verifies SSL certificates when connecting to the JSM Ops API.",
+      "PropertyDisplayName": "Verify SSL",
+      "PropertyType": 0,
+      "IsMandatory": true,
+      "Value": "true",
+      "Id": 0
+    }
+  ],
+  "IntegrationSupportedActions": [
+    {
+      "Name": "Ping",
+      "Description": "Verifies connectivity and credentials for the JSM Ops integration. Disabled by default and not intended for playbook use."
+    },
+    {
+      "Name": "Close Alert",
+      "Description": "Closing an alert indicates that the issue has been resolved and no further action is necessary."
+    },
+    {
+      "Name": "Create Alert",
+      "Description": "Creates a JSM Ops alert for your team. Optional Alias supports SecOps deduplication; Source, Details, and comma-separated tags add investigation context."
+    },
+    {
+      "Name": "Get Request Status",
+      "Description": "Tracks the status of asynchronous JSM Ops write requests (Create, Close, Escalate, Acknowledge, Assign, and similar actions) and returns alert details when available. Use the Request ID returned by those actions."
+    },
+    {
+      "Name": "Escalate Alert",
+      "Description": "Escalation triggers the defined escalation policies which could involve notifying additional users or teams, or increasing the frequency of notifications for the alert."
+    },
+    {
+      "Name": "Acknowledge Alert",
+      "Description": "Acknowledges a JSM Ops alert to indicate it is being handled and to stop further escalation notifications."
+    },
+    {
+      "Name": "Add Alert Note",
+      "Description": "Adds a note to a JSM Ops alert for investigation updates, case links, or enrichment context."
+    },
+    {
+      "Name": "Get Alert",
+      "Description": "Retrieves full details for a JSM Ops alert by Alert ID, including status, priority, owner, tags, and responders."
+    },
+    {
+      "Name": "List Alerts",
+      "Description": "Lists JSM Ops alerts with optional query filtering and pagination. Use to check for existing open alerts before creating a new one."
+    },
+    {
+      "Name": "Get Alert by Alias",
+      "Description": "Retrieves a JSM Ops alert using its alias. Useful for correlating SecOps case or alert IDs used as the alias on create."
+    },
+    {
+      "Name": "Get On-Call",
+      "Description": "Lists current on-call responders for a JSM Ops schedule. Optionally evaluate on-call at a specific date/time."
+    },
+    {
+      "Name": "Assign Alert",
+      "Description": "Assigns a JSM Ops alert to a specific user by Atlassian account ID."
+    },
+    {
+      "Name": "Add Responder",
+      "Description": "Adds a responder (team, user, escalation, or schedule) to a JSM Ops alert."
+    },
+    {
+      "Name": "Update Priority",
+      "Description": "Updates the priority of an existing JSM Ops alert (P0-P5)."
+    },
+    {
+      "Name": "Add Tags",
+      "Description": "Adds one or more tags to a JSM Ops alert for routing, categorization, or reporting."
+    },
+    {
+      "Name": "Add Extra Properties",
+      "Description": "Adds custom key/value extra properties to a JSM Ops alert (for example entity IDs, rule names, or environment)."
+    }
+  ],
+  "Categories": [
+    "IT & Infrastructure"
+  ],
+  "HasConnectors": false,
+  "DocumentationLink": "https://github.com/The-Computer-Cowboy/Google-SecOps-JSMOps-Integration",
+  "IsCertified": false,
+  "UploaderFullName": "The-Computer-Cowboy",
+  "PublishComment": "JSM Ops v11 - Fix Sync Cases skipping closed cases (status/is_case_closed/tags) and log skip reasons",
+  "UploaderEmail": "thecomputercowboy@proton.me",
+  "UploaderImageBase64": "",
+  "UploaderProfileLink": null,
+  "MinimumSystemVersion": 0.0,
+  "ProductionIntegrationIdentifier": null,
+  "Id": 0
+}

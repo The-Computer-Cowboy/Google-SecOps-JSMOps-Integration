@@ -1,0 +1,28 @@
+{
+  "id": "e0caa0ce-d52f-4500-81b9-d592d06970b6",
+  "tinyId": "1234",
+  "createdAt": "2024-01-05T07:06:47.958Z",
+  "updatedAt": "2024-01-05T07:06:47.958Z",
+  "message": "Suspicious login detected from unusual location",
+  "entity": "user@example.com",
+  "source": "Google SecOps",
+  "status": "open",
+  "alias": "secops-case-12345",
+  "tags": ["secops", "identity"],
+  "extraProperties": {
+    "rule": "suspicious_login",
+    "environment": "production"
+  },
+  "description": "Multiple failed authentications followed by success from a new geo.",
+  "acknowledged": false,
+  "count": 1,
+  "owner": "",
+  "snoozed": false,
+  "priority": "P2",
+  "responders": [
+    {
+      "id": "4513b7ea-3b91-438f-b7e4-e3e54af9147c",
+      "type": "team"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+JSM-Ops-integration.zip

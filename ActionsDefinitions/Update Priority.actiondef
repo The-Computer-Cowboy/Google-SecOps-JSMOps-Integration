@@ -1,0 +1,42 @@
+{
+  "Name": "Update Priority",
+  "Description": "Updates the priority of an existing JSM Ops alert (P0-P5).",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Type": 0,
+  "Parameters": [
+    {
+      "Name": "Alert ID",
+      "Type": 0,
+      "Description": "ID of the alert whose priority should be updated.",
+      "IsMandatory": true,
+      "Value": ""
+    },
+    {
+      "Name": "Priority",
+      "Type": 15,
+      "Description": "New priority for the alert.",
+      "IsMandatory": true,
+      "Value": "P3",
+      "OptionalValues": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ]
+    }
+  ],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}",
+  "HasJsonResult": true,
+  "DynamicResultsMetadata": [
+    {
+      "ResultName": "JsonResult",
+      "ShowResult": true,
+      "ResultExample": "{\n  \"result\": \"Request will be processed\",\n  \"requestId\": \"c3d4e5f6-a7b8-9012-cdef-123456789012\",\n  \"took\": 0.168\n}"
+    }
+  ]
+}

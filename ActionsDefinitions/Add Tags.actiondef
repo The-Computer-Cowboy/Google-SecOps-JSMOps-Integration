@@ -1,0 +1,34 @@
+{
+  "Name": "Add Tags",
+  "Description": "Adds one or more tags to a JSM Ops alert for routing, categorization, or reporting.",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Type": 0,
+  "Parameters": [
+    {
+      "Name": "Alert ID",
+      "Type": 0,
+      "Description": "ID of the alert to tag.",
+      "IsMandatory": true,
+      "Value": ""
+    },
+    {
+      "Name": "Tags",
+      "Type": 0,
+      "Description": "Comma-separated list of tags to add (for example: secops,malware,P1).",
+      "IsMandatory": true,
+      "Value": ""
+    }
+  ],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}",
+  "HasJsonResult": true,
+  "DynamicResultsMetadata": [
+    {
+      "ResultName": "JsonResult",
+      "ShowResult": true,
+      "ResultExample": "{\n  \"result\": \"Request will be processed\",\n  \"requestId\": \"d4e5f6a7-b8c9-0123-def0-234567890123\",\n  \"took\": 0.161\n}"
+    }
+  ]
+}

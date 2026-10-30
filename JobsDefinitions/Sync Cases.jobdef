@@ -1,0 +1,45 @@
+{
+  "Name": "Sync Cases",
+  "Description": "One-way sync from Google SecOps to JSM Ops. Looks only at SecOps cases with the configured tag (default: JSM). If a tagged SecOps case is closed and the linked JSM Ops alert is still open, the job closes that JSM alert and attaches the SecOps case close details. JSM alerts never create or close SecOps cases.",
+  "Integration": "JSM Ops",
+  "Creator": "community",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Version": 1.0,
+  "RunIntervalInSeconds": 300,
+  "DocumentationLink": "https://github.com/The-Computer-Cowboy/Google-SecOps-JSMOps-Integration",
+  "Parameters": [
+    {
+      "Name": "Case Tag",
+      "Type": 2,
+      "Description": "Only SecOps cases with this tag are synced. Default: JSM.",
+      "IsMandatory": true,
+      "Value": "JSM",
+      "DefaultValue": "JSM"
+    },
+    {
+      "Name": "Hours Backwards",
+      "Type": 2,
+      "Description": "How far back to look for recently closed SecOps cases, in hours.",
+      "IsMandatory": true,
+      "Value": "24",
+      "DefaultValue": "24"
+    },
+    {
+      "Name": "Max Cases Per Run",
+      "Type": 2,
+      "Description": "Maximum number of tagged closed cases to process in a single job run.",
+      "IsMandatory": true,
+      "Value": "50",
+      "DefaultValue": "50"
+    },
+    {
+      "Name": "Environment",
+      "Type": 2,
+      "Description": "Optional comma-separated SecOps environment names to limit the sync. Leave empty for all environments.",
+      "IsMandatory": false,
+      "Value": "",
+      "DefaultValue": ""
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "List Alerts",
+  "Description": "Lists JSM Ops alerts with optional query filtering and pagination. Use to check for existing open alerts before creating a new one.",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Type": 0,
+  "Parameters": [
+    {
+      "Name": "Query",
+      "Type": 0,
+      "Description": "Optional alert search query (JSM Ops query syntax).",
+      "IsMandatory": false,
+      "Value": ""
+    },
+    {
+      "Name": "Size",
+      "Type": 0,
+      "Description": "Number of alerts to return per page.",
+      "IsMandatory": false,
+      "Value": "20"
+    },
+    {
+      "Name": "Offset",
+      "Type": 0,
+      "Description": "Pagination offset for the alert list.",
+      "IsMandatory": false,
+      "Value": "0"
+    }
+  ],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}",
+  "HasJsonResult": true,
+  "DynamicResultsMetadata": [
+    {
+      "ResultName": "JsonResult",
+      "ShowResult": true,
+      "ResultExample": "{\n  \"values\": [\n    {\n      \"id\": \"e0caa0ce-d52f-4500-81b9-d592d06970b6\",\n      \"tinyId\": \"1234\",\n      \"message\": \"Suspicious login detected from unusual location\",\n      \"status\": \"open\",\n      \"acknowledged\": false,\n      \"priority\": \"P2\",\n      \"alias\": \"secops-case-12345\",\n      \"createdAt\": \"2024-01-05T07:06:47.958Z\",\n      \"updatedAt\": \"2024-01-05T07:06:47.958Z\",\n      \"source\": \"Google SecOps\",\n      \"tags\": [\n        \"secops\",\n        \"identity\"\n      ]\n    }\n  ],\n  \"links\": {\n    \"next\": \"/v1/alerts?offset=20&size=20\"\n  }\n}"
+    }
+  ]
+}

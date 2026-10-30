@@ -1,0 +1,7 @@
+{
+  "id": "1492000072838",
+  "createdAt": "2024-01-05T07:06:47.958Z",
+  "updatedAt": "2024-01-05T07:06:47.958Z",
+  "note": "SecOps case CASE-12345: investigation in progress. Host ioc-host.example.com isolated.",
+  "owner": "user@atlassian.com"
+}

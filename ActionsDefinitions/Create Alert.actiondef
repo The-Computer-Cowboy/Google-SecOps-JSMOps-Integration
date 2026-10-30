@@ -1,0 +1,77 @@
+{
+  "Name": "Create Alert",
+  "Description": "Creates a JSM Ops alert for your team. Optional Alias supports SecOps deduplication; Source, Details, and comma-separated tags add investigation context.",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Type": 0,
+  "Parameters": [
+    {
+      "Name": "Alert Message",
+      "Type": 0,
+      "Description": "Message / Description of the alert you are creating.",
+      "IsMandatory": true,
+      "Value": ""
+    },
+    {
+      "Name": "Alert Title",
+      "Type": 0,
+      "Description": "Title of the alert you are creating.",
+      "IsMandatory": true,
+      "Value": ""
+    },
+    {
+      "Name": "Alert Priority",
+      "Type": 15,
+      "Description": "Priority of the alert you are creating.",
+      "IsMandatory": true,
+      "Value": "P3",
+      "OptionalValues": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ]
+    },
+    {
+      "Name": "Alert Tag",
+      "Type": 0,
+      "Description": "Comma-separated tags applied to the alert (for example: secops,identity).",
+      "IsMandatory": false,
+      "Value": ""
+    },
+    {
+      "Name": "Alias",
+      "Type": 0,
+      "Description": "Optional unique alias used for deduplication (for example a SecOps case or alert ID).",
+      "IsMandatory": false,
+      "Value": ""
+    },
+    {
+      "Name": "Source",
+      "Type": 0,
+      "Description": "Optional source label for the alert (for example: Google SecOps).",
+      "IsMandatory": false,
+      "Value": ""
+    },
+    {
+      "Name": "Details",
+      "Type": 0,
+      "Description": "Optional JSON object string of additional detail fields (for example: {\"host\":\"server1\",\"user\":\"jdoe\"}).",
+      "IsMandatory": false,
+      "Value": ""
+    }
+  ],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}",
+  "HasJsonResult": true,
+  "DynamicResultsMetadata": [
+    {
+      "ResultName": "JsonResult",
+      "ShowResult": true,
+      "ResultExample": "{\n  \"result\": \"Request will be processed\",\n  \"requestId\": \"d383c6e9-b1e7-4b59-9c35-72f1a2187777\",\n  \"took\": 0.195\n}"
+    }
+  ]
+}

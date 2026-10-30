@@ -1,0 +1,11 @@
+{
+  "Name": "Ping",
+  "Description": "Verifies connectivity and credentials for the JSM Ops integration. Disabled by default and not intended for playbook use.",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": false,
+  "Type": 0,
+  "Parameters": [],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}"
+}

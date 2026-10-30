@@ -1,0 +1,34 @@
+{
+  "Name": "Add Alert Note",
+  "Description": "Adds a note to a JSM Ops alert for investigation updates, case links, or enrichment context.",
+  "Integration": "JSM Ops",
+  "IsCustom": true,
+  "IsEnabled": true,
+  "Type": 0,
+  "Parameters": [
+    {
+      "Name": "Alert ID",
+      "Type": 0,
+      "Description": "ID of the alert to add a note to.",
+      "IsMandatory": true,
+      "Value": ""
+    },
+    {
+      "Name": "Note",
+      "Type": 0,
+      "Description": "Note text to attach to the alert (for example a SecOps case URL or investigation summary).",
+      "IsMandatory": true,
+      "Value": ""
+    }
+  ],
+  "ScriptResultName": "is_success",
+  "SimulationDataJson": "{\"entities\": []}",
+  "HasJsonResult": true,
+  "DynamicResultsMetadata": [
+    {
+      "ResultName": "JsonResult",
+      "ShowResult": true,
+      "ResultExample": "{\n  \"id\": \"1492000072838\",\n  \"createdAt\": \"2024-01-05T07:06:47.958Z\",\n  \"updatedAt\": \"2024-01-05T07:06:47.958Z\",\n  \"note\": \"SecOps case CASE-12345: investigation in progress. Host ioc-host.example.com isolated.\",\n  \"owner\": \"user@atlassian.com\"\n}"
+    }
+  ]
+}
